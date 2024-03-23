@@ -40,10 +40,10 @@ const Poster = () => {
           <p>DESIGN WORKSHOP</p>
           <div className="md:pt-10 pt-2 md:text-sm text-tiny">
             <h4 className="font-semibold">Perks</h4>
-            <ul>
-              <li>Exclusive for MESCE Students.</li>
+            <ul className="md:max-w-[320px] max-w-[180px]">
+              <li><span className="font-bold">•</span> Exclusive for MESCE Students.</li>
               <li>
-                Top Performers will be selected to <br />
+              <span className="font-bold">•</span> Top Performers will be selected to
                 IEEE SB MESCE Design Team.
               </li>
             </ul>
