@@ -25,7 +25,7 @@ The goal of this project is to replicate the visual aesthetics and layout of the
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/inception-22-poster-recreation.git
+   git clone https://github.com/msahalkc/inception-22-poster-recreation.git
    ```
 
 2. Navigate into the project directory:
