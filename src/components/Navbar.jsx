@@ -8,13 +8,18 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
+  MenuItem,
 } from "@nextui-org/react";
 import KCLogo from "../assets/kc designs logo.svg";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Portfolio", "Behance", "Github"];
+  const menuItems = [
+    { label: "Portfolio", url: "https://msahalkc.netlify.app" },
+    { label: "Behance", url: "https://behance.net/msahalkc" },
+    { label: "Github", url: "https://github.com/msahalkc" },
+  ];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -49,22 +54,15 @@ export default function App() {
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         className="sm:hidden"
       />
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+      <NavbarMenu className="pt-10 font-[Outfit] flex items-center">
+        {menuItems.map((menuItem) => (
+          <NavbarMenuItem key={menuItem.label}>
             <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full pt-10"
-              href="#"
+              className="w-full text-black"
+              href={MenuItem.url}
               size="lg"
             >
-              {item}
+              {menuItem.label}
             </Link>
           </NavbarMenuItem>
         ))}

@@ -11,7 +11,7 @@ export default function App() {
           <iframe
             src="https://www.behance.net/embed/project/164402641?ilo0=1"
             className="w-full h-full"
-            allowfullscreen
+            allowFullScreen
             lazyload
             allow="clipboard-write"
             refererPolicy="strict-origin-when-cross-origin"
