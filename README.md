@@ -55,3 +55,7 @@ The goal of this project is to replicate the visual aesthetics and layout of the
 ## Acknowledgments
 
 Special thanks to the designers and creators of the original Inception film poster for their inspiring work.
+
+## Hosted Link
+
+You can find the website here: https://inception22.netlify.app/ 
